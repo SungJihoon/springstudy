@@ -14,7 +14,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "file:src/main/java/chapter02/exercise/e01/daoContext.xml")
+@ContextConfiguration(locations = "file:src/main/java/chapter03/exercise/e01/daoContext.xml")
 public class UserDaoTest {
 
 	@Autowired
