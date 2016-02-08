@@ -21,15 +21,7 @@ public class UserDao {
 	}
 
 	public void deleteAll() throws SQLException {
-		executeSql("delete from USERS");
-	}
-
-	private void executeSql(final String query) throws SQLException {
-		this.jdbcContext.workWithStatementStrategy(new StatementStrategy() {
-			public PreparedStatement makePreparedStatement(Connection connection) throws SQLException {
-				return connection.prepareStatement(query);
-			}
-		});
+		this.jdbcContext.executeSql("delete from USERS");
 	}
 
 	public void add(final User user) throws SQLException {
